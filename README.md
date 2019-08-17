@@ -10,9 +10,17 @@ Go to [Projects](https://github.com/JZDesign/Dangerfield-IntroToAppDev/projects)
   - Click and drag it from the top of the `To Do` to `In Progress`
 
 #### Step Two
-##### Clone the repo
+##### Clone the repo and build the dependencies
 
 Open your terminal and clone this repository `git clone  https://github.com/JZDesign/Dangerfield-IntroToAppDev.git`
+
+After you've pulled it down navigate to the project's root directory (where the `Carthage` directory is) and run `carthage bootstrap --platform iOS`
+
+**Your app will not run until you obtain the `GoogleServices-Info.plist` for Firebase and add it to the project**
+
+After you download the `.plist` select the directory highlighted below, then press the `+` button and click on `Add Files to.....` to add the file to the project.
+
+![add the plist](img/add_plist.png)
 
 #### Step Three
 
