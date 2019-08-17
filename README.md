@@ -10,9 +10,11 @@ Go to [Projects](https://github.com/JZDesign/Dangerfield-IntroToAppDev/projects)
   - Click and drag it from the top of the `To Do` to `In Progress`
 
 #### Step Two
-##### Clone the repo
+##### Clone the repo and build the dependencies
 
 Open your terminal and clone this repository `git clone  https://github.com/JZDesign/Dangerfield-IntroToAppDev.git`
+
+After you've pulled it down navigate to the project's root directory (where the `Carthage` directory is) and run `carthage bootstrap --platform iOS`
 
 #### Step Three
 
