@@ -13,6 +13,7 @@
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
 		A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */; };
+		A2876EBD230875F600565829 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2876EBC230875F600565829 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dangerfield-IntroToAppDevTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dangerfield_IntroToAppDevTests.swift; sourceTree = "<group>"; };
 		A2876EB123086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2876EBC230875F600565829 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */ = {
 			isa = PBXGroup;
 			children = (
+				A2876EBC230875F600565829 /* GoogleService-Info.plist */,
 				A2876E9A23086E6000565829 /* AppDelegate.swift */,
 				A2876E9C23086E6000565829 /* ViewController.swift */,
 				A2876E9E23086E6000565829 /* Main.storyboard */,
@@ -181,6 +184,7 @@
 			files = (
 				A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */,
 				A2876EA223086E6300565829 /* Assets.xcassets in Resources */,
+				A2876EBD230875F600565829 /* GoogleService-Info.plist in Resources */,
 				A2876EA023086E6000565829 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
