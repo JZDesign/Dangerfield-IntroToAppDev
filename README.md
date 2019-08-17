@@ -1,5 +1,9 @@
 ## Getting Started
 
+Prerequisites: Download - Xcode from the App Store or Apple's app archive, run `xcode-select --install` in the terminal, and download [Carthage](https://github.com/Carthage/Carthage)
+
+In your terminal run `git clone https://github.com/lampo/debit-ios-app.git`
+
 ### Starting the project
 
 #### Step One
