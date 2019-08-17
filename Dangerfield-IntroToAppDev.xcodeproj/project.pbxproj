@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
+		A2876E9D23086E6000565829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9C23086E6000565829 /* ViewController.swift */; };
+		A2876EA023086E6000565829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876E9E23086E6000565829 /* Main.storyboard */; };
+		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
+		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
+		A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2876EAC23086E6300565829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2876E8F23086E6000565829 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2876E9623086E6000565829;
+			remoteInfo = "Dangerfield-IntroToAppDev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2876E9C23086E6000565829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2876E9F23086E6000565829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2876EA423086E6300565829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2876EA623086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dangerfield-IntroToAppDevTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dangerfield_IntroToAppDevTests.swift; sourceTree = "<group>"; };
+		A2876EB123086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2876E9423086E6000565829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2876EA823086E6300565829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2876E8E23086E6000565829 = {
+			isa = PBXGroup;
+			children = (
+				A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */,
+				A2876EAE23086E6300565829 /* Dangerfield-IntroToAppDevTests */,
+				A2876E9823086E6000565829 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2876E9823086E6000565829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */,
+				A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */ = {
+			isa = PBXGroup;
+			children = (
+				A2876E9A23086E6000565829 /* AppDelegate.swift */,
+				A2876E9C23086E6000565829 /* ViewController.swift */,
+				A2876E9E23086E6000565829 /* Main.storyboard */,
+				A2876EA123086E6300565829 /* Assets.xcassets */,
+				A2876EA323086E6300565829 /* LaunchScreen.storyboard */,
+				A2876EA623086E6300565829 /* Info.plist */,
+			);
+			path = "Dangerfield-IntroToAppDev";
+			sourceTree = "<group>";
+		};
+		A2876EAE23086E6300565829 /* Dangerfield-IntroToAppDevTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */,
+				A2876EB123086E6300565829 /* Info.plist */,
+			);
+			path = "Dangerfield-IntroToAppDevTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2876E9623086E6000565829 /* Dangerfield-IntroToAppDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2876EB423086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDev" */;
+			buildPhases = (
+				A2876E9323086E6000565829 /* Sources */,
+				A2876E9423086E6000565829 /* Frameworks */,
+				A2876E9523086E6000565829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dangerfield-IntroToAppDev";
+			productName = "Dangerfield-IntroToAppDev";
+			productReference = A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2876EAA23086E6300565829 /* Dangerfield-IntroToAppDevTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2876EB723086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDevTests" */;
+			buildPhases = (
+				A2876EA723086E6300565829 /* Sources */,
+				A2876EA823086E6300565829 /* Frameworks */,
+				A2876EA923086E6300565829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2876EAD23086E6300565829 /* PBXTargetDependency */,
+			);
+			name = "Dangerfield-IntroToAppDevTests";
+			productName = "Dangerfield-IntroToAppDevTests";
+			productReference = A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2876E8F23086E6000565829 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jacob Rakidzich";
+				TargetAttributes = {
+					A2876E9623086E6000565829 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					A2876EAA23086E6300565829 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A2876E9623086E6000565829;
+					};
+				};
+			};
+			buildConfigurationList = A2876E9223086E6000565829 /* Build configuration list for PBXProject "Dangerfield-IntroToAppDev" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2876E8E23086E6000565829;
+			productRefGroup = A2876E9823086E6000565829 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2876E9623086E6000565829 /* Dangerfield-IntroToAppDev */,
+				A2876EAA23086E6300565829 /* Dangerfield-IntroToAppDevTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2876E9523086E6000565829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */,
+				A2876EA223086E6300565829 /* Assets.xcassets in Resources */,
+				A2876EA023086E6000565829 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2876EA923086E6300565829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2876E9323086E6000565829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2876E9D23086E6000565829 /* ViewController.swift in Sources */,
+				A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2876EA723086E6300565829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2876EAD23086E6300565829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2876E9623086E6000565829 /* Dangerfield-IntroToAppDev */;
+			targetProxy = A2876EAC23086E6300565829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2876E9E23086E6000565829 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2876E9F23086E6000565829 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2876EA323086E6300565829 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2876EA423086E6300565829 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2876EB223086E6300565829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2876EB323086E6300565829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2876EB523086E6300565829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				INFOPLIST_FILE = "Dangerfield-IntroToAppDev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2876EB623086E6300565829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				INFOPLIST_FILE = "Dangerfield-IntroToAppDev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2876EB823086E6300565829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				INFOPLIST_FILE = "Dangerfield-IntroToAppDevTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dangerfield-IntroToAppDev.app/Dangerfield-IntroToAppDev";
+			};
+			name = Debug;
+		};
+		A2876EB923086E6300565829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				INFOPLIST_FILE = "Dangerfield-IntroToAppDevTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dangerfield-IntroToAppDev.app/Dangerfield-IntroToAppDev";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2876E9223086E6000565829 /* Build configuration list for PBXProject "Dangerfield-IntroToAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2876EB223086E6300565829 /* Debug */,
+				A2876EB323086E6300565829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2876EB423086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2876EB523086E6300565829 /* Debug */,
+				A2876EB623086E6300565829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2876EB723086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDevTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2876EB823086E6300565829 /* Debug */,
+				A2876EB923086E6300565829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2876E8F23086E6000565829 /* Project object */;
+}
