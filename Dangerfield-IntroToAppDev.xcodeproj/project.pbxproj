@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8F30132308BB40000A374F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F30122308BB40000A374F /* GoogleService-Info.plist */; };
 		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
 		A2876E9D23086E6000565829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9C23086E6000565829 /* ViewController.swift */; };
 		A2876EA023086E6000565829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876E9E23086E6000565829 /* Main.storyboard */; };
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
 		A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */; };
-		A2876EC123087B1900565829 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2876EC023087B1900565829 /* GoogleService-Info.plist */; };
 		A2876EC523087DA600565829 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC423087DA600565829 /* libicucore.tbd */; };
 		A2876EE023087DD100565829 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC623087DD000565829 /* GoogleAppMeasurement.framework */; };
 		A2876EE123087DD100565829 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC723087DD000565829 /* Fabric.framework */; };
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A8F30122308BB40000A374F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2876E9C23086E6000565829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dangerfield-IntroToAppDevTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dangerfield_IntroToAppDevTests.swift; sourceTree = "<group>"; };
 		A2876EB123086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2876EC023087B1900565829 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2876EC423087DA600565829 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		A2876EC623087DD000565829 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		A2876EC723087DD000565829 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */ = {
 			isa = PBXGroup;
 			children = (
-				A2876EC023087B1900565829 /* GoogleService-Info.plist */,
+				5A8F30122308BB40000A374F /* GoogleService-Info.plist */,
 				A2876E9A23086E6000565829 /* AppDelegate.swift */,
 				A2876E9C23086E6000565829 /* ViewController.swift */,
 				A2876E9E23086E6000565829 /* Main.storyboard */,
@@ -300,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */,
+				5A8F30132308BB40000A374F /* GoogleService-Info.plist in Resources */,
 				A2876EA223086E6300565829 /* Assets.xcassets in Resources */,
-				A2876EC123087B1900565829 /* GoogleService-Info.plist in Resources */,
 				A2876EA023086E6000565829 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				DEVELOPMENT_TEAM = MSMDV43SUS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63TU4F2Z6F;
+				DEVELOPMENT_TEAM = MSMDV43SUS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
