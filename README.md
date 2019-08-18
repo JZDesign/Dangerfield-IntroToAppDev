@@ -5,7 +5,7 @@
 
 Prefix the names of the branches created to match the ticket that is being worked on. For example: 
 
-> If you've pulled ticket **`Danger-1`** into the `In Progress` Column. Name the branch you create to work on `DANGER-1_Description_of_What_I'm_Working_On`
+If you've pulled ticket **`Danger-1`** into the `In Progress` Column. Name the branch you create to work on `DANGER-1_Description_of_What_I'm_Working_On`
 
 If you think that you'll want to break up the task into more than one code review number your branch like so `DANGER-2.1_Creating_The_View_Controller` + `DANGER-2.2_Making_The_Buttons_Work`
 
