@@ -20,6 +20,8 @@ class SignInViewController: UIViewController {
     }
     
     fileprivate func setupView(){
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Sign in"
         view = signInView
     }
     

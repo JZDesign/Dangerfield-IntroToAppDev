@@ -10,15 +10,6 @@ import Foundation
 import UIKit
 class SignInView: UIView{
     
-    var titleLabel: UILabel = {
-        
-        let label = UILabel()
-        label.text = "Sign In"
-        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 30)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     
     var emailTextField : SimpleTextField = {
         let textField = SimpleTextField()
@@ -35,6 +26,13 @@ class SignInView: UIView{
         return textField
     }()
     
+    var signinButton: ActionButton = {
+        let button = ActionButton()
+        button.setTitle("Sign In", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,17 +46,19 @@ class SignInView: UIView{
     
     private func setupView(){
         backgroundColor = Colors.primaryColor
-        self.addSubview(titleLabel)
         self.addSubview(emailTextField)
         self.addSubview(passwordTextField)
+        self.addSubview(signinButton)
         setConstraints()
     }
     
     private func setConstraints(){
-        Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width: 0, height: 0, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight, centerXAnchor: centerXAnchor, centerXConstant: 0)
-        Constraints.constraintWithTopAndCenterXAnchor(field: emailTextField, width: 300, height: 50, topAnchor: titleLabel.bottomAnchor, topConstant: 50, centerXAnchor: centerXAnchor, centerXConstant: 0)
+
+        Constraints.constrainWithTopAndLeadingAndTrailing(field: emailTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight + UIElementSizes.windowHeight/10, leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
         
-         Constraints.constraintWithTopAndCenterXAnchor(field: passwordTextField, width: 300, height: 50, topAnchor: emailTextField.bottomAnchor, topConstant: 50, centerXAnchor: centerXAnchor, centerXConstant: 0)
+        Constraints.constrainWithTopAndLeadingAndTrailing(field: passwordTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: emailTextField.bottomAnchor, topConstant: 20, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
+    
+        Constraints.constrainWithBottomAndLeadingAndTrailing(field: signinButton, width: 0, height: UIElementSizes.actionButtonHeight, bottomAnchor: centerYAnchor, bottomConstant: 0, leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
         
     }
 }
