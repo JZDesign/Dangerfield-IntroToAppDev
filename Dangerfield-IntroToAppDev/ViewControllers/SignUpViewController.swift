@@ -42,8 +42,8 @@ class SignUpViewController: UIViewController {
     
     @objc
     func navigateToHome(sender: Any){
-        let homeVC = HomeViewController()
-        self.navigationController?.pushViewController(homeVC, animated: true)
+        let navigationController = UINavigationController(rootViewController: HomeViewController())
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     @objc

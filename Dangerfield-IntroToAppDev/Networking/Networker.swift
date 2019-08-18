@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 
 let sucessfullLoginKey = "sucessfullLogInKey"
+let sucessfullSignoutKey = "sucessfullSignoutKey"
 
 enum LoginError: Error {
     case incompleteForm
@@ -53,5 +54,16 @@ struct FirebaseConnection {
             let name = Notification.Name(rawValue: sucessfullLoginKey)
             NotificationCenter.default.post(name: name, object: nil)
             })
+    }
+    
+    static func signOutUser() -> Bool{
+        do{
+            try Auth.auth().signOut()
+            return true
+        }catch{
+            return false
+            print("Unsucessfull Sign Out")
+        }
+        
     }
 }

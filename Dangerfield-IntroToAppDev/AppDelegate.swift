@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         //code to help use programatic views
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = WelcomeViewController()
+        let viewController = HomeViewController()
         window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
     
