@@ -22,9 +22,14 @@ class SignInViewController: UIViewController {
     fileprivate func setupView(){
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Sign in"
+        
+        signInView.signinButton.addTarget(self, action: #selector(handleSignInClick(sender:)), for: .touchUpInside)
         view = signInView
     }
     
-
-
+    @objc
+    func handleSignInClick(sender: ActionButton){
+        print("Email: ",signInView.emailTextField.text ?? "none")
+        print("Password: ",signInView.passwordTextField.text ?? "none")
+    }
 }
