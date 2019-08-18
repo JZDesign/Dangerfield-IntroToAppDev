@@ -34,7 +34,7 @@ class SignUpView: UIView{
         return textField
     }()
     
-    var signinButton: ActionButton = {
+    var signUpButton: ActionButton = {
         let button = ActionButton()
         button.setTitle("Sign Up", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -56,7 +56,7 @@ class SignUpView: UIView{
         backgroundColor = Colors.primaryColor
         self.addSubview(emailTextField)
         self.addSubview(passwordTextField)
-        self.addSubview(signinButton)
+        self.addSubview(signUpButton)
         self.addSubview(confirmPasswordTextField)
         setConstraints()
     }
@@ -69,8 +69,7 @@ class SignUpView: UIView{
         
          Constraints.constrainWithTopAndLeadingAndTrailing(field: confirmPasswordTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: passwordTextField.bottomAnchor, topConstant: 20, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
         
-        Constraints.constrainWithTopAndLeadingAndTrailing(field: signinButton, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: confirmPasswordTextField.bottomAnchor, topConstant: 30, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
-       
+        Constraints.constrainWithTopAndLeadingAndTrailing(field: signUpButton, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: confirmPasswordTextField.bottomAnchor, topConstant: 30, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
         
     }
 }

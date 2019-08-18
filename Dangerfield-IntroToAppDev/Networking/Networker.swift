@@ -11,12 +11,12 @@ import Foundation
 enum LoginError: Error {
     case incompleteForm
     case invalidEmail
-    case incorrectEmail
-    case incorrectPassword
     case incorrectPasswordLength
+    case missMatchPasswords
 }
 
 struct FirebaseConnection {
+    
      static func signInUser(email: String, password: String) throws{
         if email.isEmpty || password.isEmpty  {
             throw LoginError.incompleteForm
@@ -29,5 +29,21 @@ struct FirebaseConnection {
         }
         
         print("Sucessful Log in!!!")
+    }
+    
+    static func signUpUser(email: String, password: String, confirmPassword: String) throws{
+        if email.isEmpty || password.isEmpty || confirmPassword.isEmpty  {
+            throw LoginError.incompleteForm
+        }
+        if !email.isValidEmail {
+            throw LoginError.invalidEmail
+        }
+        if password.count < 6 {
+            throw LoginError.incorrectPasswordLength
+        }
+        if(password != confirmPassword){
+            throw LoginError.missMatchPasswords
+        }
+        print("Sucessful Sign Up!!!")
     }
 }
