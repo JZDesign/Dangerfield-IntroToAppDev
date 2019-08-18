@@ -104,4 +104,14 @@ class Constraints {
         
     }
     
+    static func constrainWithTopAndLeadingAndTrailing(field: AnyObject, width: CGFloat, height: CGFloat, topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat,leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
+        
+        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
+        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
+        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
+        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
+        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
+        
+    }
+    
 }

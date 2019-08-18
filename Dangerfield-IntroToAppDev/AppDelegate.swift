@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = WelcomeViewController()
         window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
+    
         return true
     }
 

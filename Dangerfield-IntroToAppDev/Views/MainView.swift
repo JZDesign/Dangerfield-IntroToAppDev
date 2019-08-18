@@ -16,7 +16,10 @@ class MainView: UIView{
         let label = UILabel()
         label.text = "Welcome User!"
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 30)
+        //set a max font so it adjusts to width
+        label.font = UIFont(name: "HelveticaNeue-Bold", size:100)
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,9 +76,11 @@ class MainView: UIView{
     
     fileprivate func setConstraints(){
         
-        Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width: 0, height: 30, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight + 75, centerXAnchor: centerXAnchor, centerXConstant: 0)
+        Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width:UIElementSizes.windowWidth - 80 , height: 0, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight , centerXAnchor: centerXAnchor, centerXConstant: 0)
         
-       Constraints.constrainWithBottomAndLeadingAndTrailing(field: buttonStackView, width: 0, height: 2 * UIElementSizes.actionButtonHeight + 20, bottomAnchor: bottomAnchor, bottomConstant: -100, leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
+        //height constrainted to hold 2 action buttons w/ 20 spacing
+        //topConstant to push to bottom 4th of screen
+       Constraints.constrainWithTopAndLeadingAndTrailing(field: buttonStackView, width: 0, height: 2 * UIElementSizes.actionButtonHeight + 20, topAnchor: centerYAnchor, topConstant: UIElementSizes.windowHeight/4 ,leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
 
         
     }
