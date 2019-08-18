@@ -29,7 +29,26 @@ class SignInViewController: UIViewController {
     
     @objc
     func handleSignInClick(sender: ActionButton){
-        print("Email: ",signInView.emailTextField.text ?? "none")
-        print("Password: ",signInView.passwordTextField.text ?? "none")
+        //guard return lets it act such that if the user does not type in a user or password, the sign in button
+        //does nothing
+        guard let emailAddress = signInView.emailTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
+        guard let password = signInView.passwordTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
+
+        do{
+            try FirebaseConnection.signInUser(email:emailAddress, password: password)
+        }catch LoginError.incompleteForm{
+            CreateAlert.showBasic(self, title: "Incomplete Form", message: "Please fill out both password and email")
+            return
+        }catch LoginError.invalidEmail{
+            CreateAlert.showBasic(self, title: "Invalid Email", message: "Email not valid, please try again")
+            return
+        }catch LoginError.incorrectPasswordLength{
+            CreateAlert.showBasic(self, title: "Password too short", message: "Passwords are at least 6 characters")
+            return
+        }catch {
+            CreateAlert.showBasic(self, title: "Error", message: "An unknown error occured")
+            return
+        }
+
     }
 }
