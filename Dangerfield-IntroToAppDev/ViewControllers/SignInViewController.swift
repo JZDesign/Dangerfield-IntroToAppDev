@@ -49,9 +49,9 @@ class SignInViewController: UIViewController {
             self.present(navigationController, animated: true, completion: nil)
         }else{
             if let error: String = (notification.userInfo?["error"] as! String?){
-                CreateAlert.showBasic(self, title: "Error Signing in", message: error)
+                CreateAlert.showBasic(self, title: "Error Signing In", message: error)
             }
-    
+        }
     }
     
     @objc
