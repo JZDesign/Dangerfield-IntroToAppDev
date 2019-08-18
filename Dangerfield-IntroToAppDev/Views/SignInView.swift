@@ -22,7 +22,15 @@ class SignInView: UIView{
     
     var emailTextField : SimpleTextField = {
         let textField = SimpleTextField()
-        textField.placeholder = "Enter Your Email"
+        textField.placeholder = "Email"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    var passwordTextField : SimpleTextField = {
+        let textField = SimpleTextField()
+        textField.placeholder = "Password"
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -42,12 +50,15 @@ class SignInView: UIView{
         backgroundColor = Colors.primaryColor
         self.addSubview(titleLabel)
         self.addSubview(emailTextField)
+        self.addSubview(passwordTextField)
         setConstraints()
     }
     
     private func setConstraints(){
         Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width: 0, height: 0, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight, centerXAnchor: centerXAnchor, centerXConstant: 0)
         Constraints.constraintWithTopAndCenterXAnchor(field: emailTextField, width: 300, height: 50, topAnchor: titleLabel.bottomAnchor, topConstant: 50, centerXAnchor: centerXAnchor, centerXConstant: 0)
+        
+         Constraints.constraintWithTopAndCenterXAnchor(field: passwordTextField, width: 300, height: 50, topAnchor: emailTextField.bottomAnchor, topConstant: 50, centerXAnchor: centerXAnchor, centerXConstant: 0)
         
     }
 }
