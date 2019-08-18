@@ -1,3 +1,18 @@
+
+# Contributing
+
+## Branching
+
+Prefix the names of the branches created to match the ticket that is being worked on. For example: 
+
+> If you've pulled ticket **`Danger-1`** into the `In Progress` Column. Name the branch you create to work on `DANGER-1_Description_of_What_I'm_Working_On`
+
+If you think that you'll want to break up the task into more than one code review number your branch like so `DANGER-2.1_Creating_The_View_Controller` + `DANGER-2.2_Making_The_Buttons_Work`
+
+## Pull Requests
+
+Try to keep the amount of code submitted for a Pull Request under 200 lines of code. This will make it a lot easier for me to quickly review your work. It also helps catch bugs before they're pushed to master. 
+
 ## Getting Started
 
 Prerequisites: Download - Xcode from the App Store or Apple's app archive, run `xcode-select --install` in the terminal, and download [Carthage](https://github.com/Carthage/Carthage)
