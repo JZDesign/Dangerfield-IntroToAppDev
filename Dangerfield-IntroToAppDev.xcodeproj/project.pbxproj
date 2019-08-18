@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5A8F30132308BB40000A374F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F30122308BB40000A374F /* GoogleService-Info.plist */; };
+		5A8F30152309AB67000A374F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30142309AB67000A374F /* WelcomeViewController.swift */; };
+		5A8F301A2309ABF5000A374F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30192309ABF5000A374F /* MainView.swift */; };
+		5A8F301C2309AC05000A374F /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F301B2309AC05000A374F /* Constraints.swift */; };
+		5A8F301E2309AC2E000A374F /* UIElementSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F301D2309AC2E000A374F /* UIElementSizes.swift */; };
+		5A8F30202309AC47000A374F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F301F2309AC47000A374F /* Colors.swift */; };
 		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
-		A2876E9D23086E6000565829 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9C23086E6000565829 /* WelcomeViewController.swift */; };
-		A2876EA023086E6000565829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876E9E23086E6000565829 /* Main.storyboard */; };
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
 		A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */; };
@@ -55,10 +58,13 @@
 
 /* Begin PBXFileReference section */
 		5A8F30122308BB40000A374F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A8F30142309AB67000A374F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5A8F30192309ABF5000A374F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5A8F301B2309AC05000A374F /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		5A8F301D2309AC2E000A374F /* UIElementSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIElementSizes.swift; sourceTree = "<group>"; };
+		5A8F301F2309AC47000A374F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2876E9C23086E6000565829 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		A2876E9F23086E6000565829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2876EA423086E6300565829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2876EA623086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +145,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A8F30162309ABB9000A374F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A8F30172309ABC3000A374F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F30142309AB67000A374F /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5A8F30182309ABE2000A374F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F301F2309AC47000A374F /* Colors.swift */,
+				5A8F301D2309AC2E000A374F /* UIElementSizes.swift */,
+				5A8F301B2309AC05000A374F /* Constraints.swift */,
+				5A8F30192309ABF5000A374F /* MainView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		A2876E8E23086E6000565829 = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +193,11 @@
 		A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */ = {
 			isa = PBXGroup;
 			children = (
+				5A8F30182309ABE2000A374F /* Custom */,
+				5A8F30172309ABC3000A374F /* ViewControllers */,
+				5A8F30162309ABB9000A374F /* Views */,
 				5A8F30122308BB40000A374F /* GoogleService-Info.plist */,
 				A2876E9A23086E6000565829 /* AppDelegate.swift */,
-				A2876E9C23086E6000565829 /* WelcomeViewController.swift */,
-				A2876E9E23086E6000565829 /* Main.storyboard */,
 				A2876EA123086E6300565829 /* Assets.xcassets */,
 				A2876EA323086E6300565829 /* LaunchScreen.storyboard */,
 				A2876EA623086E6300565829 /* Info.plist */,
@@ -302,7 +335,6 @@
 				A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */,
 				5A8F30132308BB40000A374F /* GoogleService-Info.plist in Resources */,
 				A2876EA223086E6300565829 /* Assets.xcassets in Resources */,
-				A2876EA023086E6000565829 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2876E9D23086E6000565829 /* WelcomeViewController.swift in Sources */,
+				5A8F301C2309AC05000A374F /* Constraints.swift in Sources */,
+				5A8F30202309AC47000A374F /* Colors.swift in Sources */,
 				A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */,
+				5A8F301A2309ABF5000A374F /* MainView.swift in Sources */,
+				5A8F30152309AB67000A374F /* WelcomeViewController.swift in Sources */,
+				5A8F301E2309AC2E000A374F /* UIElementSizes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A2876E9E23086E6000565829 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2876E9F23086E6000565829 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2876EA323086E6300565829 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
