@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Firebase
+
+let sucessfullLoginKey = "sucessfullLogInKey"
 
 enum LoginError: Error {
     case incompleteForm
@@ -45,5 +48,10 @@ struct FirebaseConnection {
             throw LoginError.missMatchPasswords
         }
         print("Sucessful Sign Up!!!")
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (result, error) in
+            //this code runs when complete, maybe send a notification that the sign in was complete
+            let name = Notification.Name(rawValue: sucessfullLoginKey)
+            NotificationCenter.default.post(name: name, object: nil)
+            })
     }
 }

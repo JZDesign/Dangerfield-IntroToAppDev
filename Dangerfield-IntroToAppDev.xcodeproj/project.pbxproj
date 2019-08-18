@@ -22,6 +22,8 @@
 		5A8F30322309DC34000A374F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30312309DC34000A374F /* SignUpViewController.swift */; };
 		5A8F30342309DC43000A374F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30332309DC43000A374F /* SignUpView.swift */; };
 		5A8F30362309E289000A374F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F30352309E289000A374F /* GoogleService-Info.plist */; };
+		5A8F30382309E5BA000A374F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30372309E5BA000A374F /* HomeViewController.swift */; };
+		5A8F303A2309E629000A374F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30392309E629000A374F /* HomeView.swift */; };
 		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
@@ -81,6 +83,8 @@
 		5A8F30312309DC34000A374F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5A8F30332309DC43000A374F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5A8F30352309E289000A374F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A8F30372309E5BA000A374F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A8F30392309E629000A374F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				5A8F30192309ABF5000A374F /* MainView.swift */,
 				5A8F30252309BB60000A374F /* SignInView.swift */,
 				5A8F30332309DC43000A374F /* SignUpView.swift */,
+				5A8F30392309E629000A374F /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				5A8F30142309AB67000A374F /* WelcomeViewController.swift */,
 				5A8F30232309BB04000A374F /* SignInViewController.swift */,
 				5A8F30312309DC34000A374F /* SignUpViewController.swift */,
+				5A8F30372309E5BA000A374F /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -459,12 +465,14 @@
 				5A8F302B2309D17E000A374F /* Networker.swift in Sources */,
 				5A8F30262309BB60000A374F /* SignInView.swift in Sources */,
 				5A8F301C2309AC05000A374F /* Constraints.swift in Sources */,
+				5A8F303A2309E629000A374F /* HomeView.swift in Sources */,
 				5A8F30202309AC47000A374F /* Colors.swift in Sources */,
 				A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */,
 				5A8F30302309D964000A374F /* CreateAlert.swift in Sources */,
 				5A8F301A2309ABF5000A374F /* MainView.swift in Sources */,
 				5A8F30322309DC34000A374F /* SignUpViewController.swift in Sources */,
 				5A8F30242309BB04000A374F /* SignInViewController.swift in Sources */,
+				5A8F30382309E5BA000A374F /* HomeViewController.swift in Sources */,
 				5A8F30152309AB67000A374F /* WelcomeViewController.swift in Sources */,
 				5A8F301E2309AC2E000A374F /* UIElementSizes.swift in Sources */,
 				5A8F30222309AFC1000A374F /* ActionButton.swift in Sources */,

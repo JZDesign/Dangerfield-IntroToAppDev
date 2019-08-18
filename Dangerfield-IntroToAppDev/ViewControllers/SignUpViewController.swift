@@ -11,11 +11,17 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     var signUpView = SignUpView()
+    let notifictionName = Notification.Name(rawValue: sucessfullLoginKey)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+    }
+    
+    deinit {
+        //clean up notification observers before you go
+        NotificationCenter.default.removeObserver(self)
     }
     
 
@@ -24,7 +30,20 @@ class SignUpViewController: UIViewController {
         title = "Sign Up"
         
         signUpView.signUpButton.addTarget(self, action: #selector(handleSignUpClick(sender:)), for: .touchUpInside)
+        
+        createObservers()
+        
         view = signUpView
+    }
+    
+    fileprivate func createObservers(){
+        NotificationCenter.default.addObserver(self, selector: #selector(navigateToHome(sender:)), name: notifictionName, object: nil)
+    }
+    
+    @objc
+    func navigateToHome(sender: Any){
+        let homeVC = HomeViewController()
+        self.navigationController?.pushViewController(homeVC, animated: true)
     }
     
     @objc
