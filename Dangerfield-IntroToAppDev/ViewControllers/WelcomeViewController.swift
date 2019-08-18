@@ -25,7 +25,10 @@ class WelcomeViewController: UIViewController {
         //styleistic choice to remove background of navigation controller
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
+        
         mainView.signinButton.addTarget(self, action: #selector(handleSignInClick(sender:)), for: .touchUpInside)
+        mainView.signupButton.addTarget(self, action: #selector(handleSignUpClick(sender:)), for: .touchUpInside)
+
         view = mainView
     }
     
@@ -38,6 +41,12 @@ class WelcomeViewController: UIViewController {
     func handleSignInClick(sender: ActionButton){
         let signInVC = SignInViewController()
         self.navigationController?.pushViewController(signInVC, animated: true)
+    }
+    
+    @objc
+    func handleSignUpClick(sender: ActionButton){
+        let signUpVC = SignUpViewController()
+        self.navigationController?.pushViewController(signUpVC, animated: true)
     }
 
 }
