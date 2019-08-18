@@ -21,6 +21,31 @@ class MainView: UIView{
         return label
     }()
     
+    var signupButton: ActionButton = {
+        let button = ActionButton()
+        button.setTitle("Sign Up", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    var signinButton: ActionButton = {
+        let button = ActionButton()
+        button.setTitle("Sign In", for: .normal)
+        button.backgroundColor = .white
+        button.setTitleColor(.blue, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var buttonStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [signupButton,signinButton])
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        stackView.spacing = 20
+        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
     
     
     override init(frame: CGRect) {
@@ -40,13 +65,17 @@ class MainView: UIView{
         backgroundColor = Colors.primaryColor
         
         self.addSubview(titleLabel)
+        self.addSubview(buttonStackView)
+        
         setConstraints()
         
     }
     
     fileprivate func setConstraints(){
         
-        Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width: 0, height: 30, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight, centerXAnchor: centerXAnchor, centerXConstant: 0)
+        Constraints.constraintWithTopAndCenterXAnchor(field: titleLabel, width: 0, height: 30, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight + 75, centerXAnchor: centerXAnchor, centerXConstant: 0)
+        
+       Constraints.constrainWithBottomAndLeadingAndTrailing(field: buttonStackView, width: 0, height: 2 * UIElementSizes.actionButtonHeight + 20, bottomAnchor: bottomAnchor, bottomConstant: -100, leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
 
         
     }

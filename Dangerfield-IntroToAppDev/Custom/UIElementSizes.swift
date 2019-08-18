@@ -18,5 +18,8 @@ struct UIElementSizes {
     static var navigationBarHeight: CGFloat = 0
     static var statusBarHeight: CGFloat = 0
     
+    static var actionButtonWidth: CGFloat = 250
+    static var actionButtonHeight: CGFloat = 60
+    
     
 }
