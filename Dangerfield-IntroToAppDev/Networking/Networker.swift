@@ -9,7 +9,9 @@
 import Foundation
 import Firebase
 
-let sucessfullLoginKey = "sucessfullLogInKey"
+let resultLoginKey = "LogInKey"
+let successKey = "success"
+let failKey = "fail"
 let sucessfullSignoutKey = "sucessfullSignoutKey"
 
 enum LoginError: Error {
@@ -48,11 +50,20 @@ struct FirebaseConnection {
         if(password != confirmPassword){
             throw LoginError.missMatchPasswords
         }
-        print("Sucessful Sign Up!!!")
+        
         Auth.auth().createUser(withEmail: email, password: password, completion: { (result, error) in
             //this code runs when complete, maybe send a notification that the sign in was complete
-            let name = Notification.Name(rawValue: sucessfullLoginKey)
-            NotificationCenter.default.post(name: name, object: nil)
+            var result = [String:String]()
+            
+            if let error = error {
+                print("failed to sign up user with error: ",error.localizedDescription)
+                result["result"] = failKey
+                result["error"] = error.localizedDescription
+            }else{
+                result["result"] = successKey
+            }
+            let name = Notification.Name(rawValue: resultLoginKey)
+            NotificationCenter.default.post(name: name, object: nil,userInfo: result)
             })
     }
     
@@ -61,8 +72,8 @@ struct FirebaseConnection {
             try Auth.auth().signOut()
             return true
         }catch{
-            return false
             print("Unsucessfull Sign Out")
+            return false
         }
         
     }

@@ -11,7 +11,7 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     var signUpView = SignUpView()
-    let notifictionName = Notification.Name(rawValue: sucessfullLoginKey)
+    let notifictionName = Notification.Name(rawValue: resultLoginKey)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +37,21 @@ class SignUpViewController: UIViewController {
     }
     
     fileprivate func createObservers(){
-        NotificationCenter.default.addObserver(self, selector: #selector(navigateToHome(sender:)), name: notifictionName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSignUpResult(_:)), name: notifictionName, object: nil)
     }
     
     @objc
-    func navigateToHome(sender: Any){
-        let navigationController = UINavigationController(rootViewController: HomeViewController())
-        self.present(navigationController, animated: true, completion: nil)
+    func handleSignUpResult(_ notification: NSNotification){
+        let result: String = notification.userInfo?["result"] as! String
+        if result == successKey {
+            let navigationController = UINavigationController(rootViewController: HomeViewController())
+            self.present(navigationController, animated: true, completion: nil)
+        }else{
+            if let error: String = (notification.userInfo?["error"] as! String?){
+                CreateAlert.showBasic(self, title: "Error Signing Up", message: error)
+            }
+        }
+        
     }
     
     @objc
