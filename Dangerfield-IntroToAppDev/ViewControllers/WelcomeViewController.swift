@@ -22,6 +22,7 @@ class WelcomeViewController: UIViewController {
     }
     
     fileprivate func setupView(){
+        mainView.signinButton.addTarget(self, action: #selector(handleSignInClick(sender:)), for: .touchUpInside)
         view = mainView
     }
     
@@ -30,5 +31,10 @@ class WelcomeViewController: UIViewController {
         return Swift.min(statusBarSize.width, statusBarSize.height)
     }
     
+    @objc
+    func handleSignInClick(sender: ActionButton){
+        let signInVC = SignInViewController()
+        self.navigationController?.pushViewController(signInVC, animated: true)
+    }
 
 }
