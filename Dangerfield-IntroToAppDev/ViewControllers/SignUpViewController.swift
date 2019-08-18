@@ -19,20 +19,22 @@ class SignUpViewController: UIViewController {
         setupView()
     }
     
-    deinit {
-        //clean up notification observers before you go
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        createObservers()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
     }
     
-
     fileprivate func setupView(){
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Sign Up"
         
         signUpView.signUpButton.addTarget(self, action: #selector(handleSignUpClick(sender:)), for: .touchUpInside)
-        
-        createObservers()
-        
+                
         view = signUpView
     }
     

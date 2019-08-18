@@ -11,20 +11,47 @@ import UIKit
 class SignInViewController: UIViewController {
 
     var signInView = SignInView()
-    
+    let notifictionName = Notification.Name(rawValue: resultLoginKey)
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         setupView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        createObservers()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
     }
     
     fileprivate func setupView(){
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Sign in"
-        
         signInView.signinButton.addTarget(self, action: #selector(handleSignInClick(sender:)), for: .touchUpInside)
         view = signInView
+    }
+
+    
+    fileprivate func createObservers(){
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSigninResult(_:)), name: notifictionName, object: nil)
+    }
+    
+    @objc
+    func handleSigninResult(_ notification: NSNotification){
+        let result: String = notification.userInfo?["result"] as! String
+        if result == successKey {
+            let navigationController = UINavigationController(rootViewController: HomeViewController())
+            self.present(navigationController, animated: true, completion: nil)
+        }else{
+            if let error: String = (notification.userInfo?["error"] as! String?){
+                CreateAlert.showBasic(self, title: "Error Signing in", message: error)
+            }
+    
     }
     
     @objc

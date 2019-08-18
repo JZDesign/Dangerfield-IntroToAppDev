@@ -35,7 +35,21 @@ struct FirebaseConnection {
         }
         
         print("Sucessful Log in!!!")
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (result, error) in
+            var result = [String:String]()
+            
+            if let error = error {
+                print("failed to sign in user with error: ",error.localizedDescription)
+                result["result"] = failKey
+                result["error"] = error.localizedDescription
+            }else{
+                result["result"] = successKey
+            }
+            let name = Notification.Name(rawValue: resultLoginKey)
+            NotificationCenter.default.post(name: name, object: nil,userInfo: result)
+        })
     }
+    
     
     static func signUpUser(email: String, password: String, confirmPassword: String) throws{
         if email.isEmpty || password.isEmpty || confirmPassword.isEmpty  {
