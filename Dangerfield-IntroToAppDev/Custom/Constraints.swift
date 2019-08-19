@@ -8,110 +8,59 @@
 
 import Foundation
 import UIKit
+extension UIView {
 
-class Constraints {
-    
-    static func constraintWithTopAndLeadingAnchor(field: AnyObject, width: CGFloat, height: CGFloat, topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat, leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        
+    func build() {
+        translatesAutoresizingMaskIntoConstraints = false
     }
-    
-    
-    static func constraintWithTopAndTrailingAnchor(field: AnyObject, width: CGFloat, height: CGFloat, topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
-        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
-        
+
+    func top(_ constraint: NSLayoutYAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.topAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithBottomAndLeading(field: AnyObject, width: CGFloat, height: CGFloat, bottomAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, bottomConstant: CGFloat, leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.bottomAnchor.constraint(equalTo: bottomAnchor, constant: bottomConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        
+
+    func leading(_ constraint: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.leadingAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithTopAndCenterXAnchor(field: AnyObject, width: CGFloat, height: CGFloat, topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat, centerXAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, centerXConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
-        field.centerXAnchor.constraint(equalTo: centerXAnchor, constant: centerXConstant).isActive = true
-        
+
+    func centerX(_ constraint: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.centerXAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithCenterYAnchorAndLeading(field: AnyObject, width: CGFloat, height: CGFloat, centerYAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, centerYConstant: CGFloat, leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        
+
+    func centerY(_ constraint: NSLayoutYAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.centerYAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithCenterYAnchorAndTrailing(field: AnyObject, width: CGFloat, height: CGFloat, centerYAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, centerYConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYConstant).isActive = true
-        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
-        
+
+    func trailing(_ constraint: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.trailingAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithCenterYAndCenterXAnchor(field: AnyObject, width: CGFloat, height: CGFloat, centerYAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, centerYConstant: CGFloat, centerXAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, centerXConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYConstant).isActive = true
-        field.centerXAnchor.constraint(equalTo: centerXAnchor, constant: centerXConstant).isActive = true
-        
+
+    func bottom(_ constraint: NSLayoutYAxisAnchor, constant: CGFloat = 0) -> UIView {
+        self.bottomAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constraintWithBottomAndCenterXAnchor(field: AnyObject, width: CGFloat, height: CGFloat, bottomAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, bottomConstatnt: CGFloat, centerXAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, centerXConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.bottomAnchor.constraint(equalTo: bottomAnchor, constant: bottomConstatnt).isActive = true
-        field.centerXAnchor.constraint(equalTo: centerXAnchor, constant: centerXConstant).isActive = true
-        
+
+    func height(_ constraint: NSLayoutDimension, constant: CGFloat = 0) -> UIView {
+        self.heightAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    
-    static func constrainWithBottomAndTopLeadingAndTrailing(field: AnyObject, width: CGFloat, height: CGFloat, bottomAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, bottomConstant: CGFloat,  topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat,leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.bottomAnchor.constraint(equalTo: bottomAnchor, constant: bottomConstant).isActive = true
-        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
-        
+
+    func width(_ constraint: NSLayoutDimension, constant: CGFloat = 0) -> UIView {
+        self.widthAnchor.constraint(equalTo: constraint, constant: constant).isActive = true
+        return self
     }
-    static func constrainWithBottomAndLeadingAndTrailing(field: AnyObject, width: CGFloat, height: CGFloat, bottomAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, bottomConstant: CGFloat,leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.bottomAnchor.constraint(equalTo: bottomAnchor, constant: bottomConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
-        
+
+    func height(_ constant: CGFloat = 0) -> UIView {
+        self.heightAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
     }
-    
-    static func constrainWithTopAndLeadingAndTrailing(field: AnyObject, width: CGFloat, height: CGFloat, topAnchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, topConstant: CGFloat,leadingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, leadingConstant: CGFloat, trailingAnchor: NSLayoutAnchor<NSLayoutXAxisAnchor>, trailingConstant: CGFloat) {
-        
-        field.widthAnchor.constraint(equalToConstant: width).isActive = width == CGFloat(0) ? false: true
-        field.heightAnchor.constraint(equalToConstant: height).isActive = height == CGFloat(0) ? false: true
-        field.topAnchor.constraint(equalTo: topAnchor, constant: topConstant).isActive = true
-        field.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstant).isActive = true
-        field.trailingAnchor.constraint(equalTo: trailingAnchor, constant: trailingConstant).isActive = true
-        
+
+    func width(_ constant: CGFloat = 0) -> UIView {
+        self.widthAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
     }
-    
 }

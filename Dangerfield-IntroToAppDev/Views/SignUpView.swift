@@ -8,51 +8,50 @@
 
 import Foundation
 import UIKit
-class SignUpView: UIView{
-    
-    
-    var emailTextField : SimpleTextField = {
+class SignUpView: UIView {
+
+    var emailTextField: SimpleTextField = {
         let textField = SimpleTextField()
         textField.placeholder = "Email"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
-    
-    var passwordTextField : SimpleTextField = {
+
+    var passwordTextField: SimpleTextField = {
         let textField = SimpleTextField()
         textField.placeholder = "Password"
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
-    
-    var confirmPasswordTextField : SimpleTextField = {
+
+    var confirmPasswordTextField: SimpleTextField = {
         let textField = SimpleTextField()
         textField.placeholder = "Confirm Password"
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
-    
+
     var signUpButton: ActionButton = {
         let button = ActionButton()
         button.setTitle("Sign Up", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
-    
+
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
-    
-    private func setupView(){
+
+    private func setupView() {
         backgroundColor = Colors.primaryColor
         self.addSubview(emailTextField)
         self.addSubview(passwordTextField)
@@ -60,16 +59,35 @@ class SignUpView: UIView{
         self.addSubview(confirmPasswordTextField)
         setConstraints()
     }
-    
-    private func setConstraints(){
-        
-        Constraints.constrainWithTopAndLeadingAndTrailing(field: emailTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: topAnchor, topConstant: UIElementSizes.navigationBarHeight + UIElementSizes.statusBarHeight + UIElementSizes.windowHeight/10, leadingAnchor: leadingAnchor, leadingConstant: 20, trailingAnchor: trailingAnchor, trailingConstant: -20)
-        
-        Constraints.constrainWithTopAndLeadingAndTrailing(field: passwordTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: emailTextField.bottomAnchor, topConstant: 20, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
-        
-         Constraints.constrainWithTopAndLeadingAndTrailing(field: confirmPasswordTextField, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: passwordTextField.bottomAnchor, topConstant: 20, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
-        
-        Constraints.constrainWithTopAndLeadingAndTrailing(field: signUpButton, width: 0, height: UIElementSizes.actionButtonHeight, topAnchor: confirmPasswordTextField.bottomAnchor, topConstant: 30, leadingAnchor: emailTextField.leadingAnchor, leadingConstant: 0, trailingAnchor: emailTextField.trailingAnchor, trailingConstant: 0)
-        
+
+    private func setConstraints() {
+
+        emailTextField
+            .height(UIElementSizes.actionButtonHeight)
+            .top(safeAreaLayoutGuide.topAnchor, constant: UIElementSizes.windowHeight/10)
+            .leading(leadingAnchor, constant: 20)
+            .trailing(trailingAnchor, constant: -20)
+            .build()
+
+        passwordTextField
+            .height(UIElementSizes.actionButtonHeight)
+            .top(emailTextField.bottomAnchor, constant: 20)
+            .leading(emailTextField.leadingAnchor)
+            .trailing(emailTextField.trailingAnchor)
+            .build()
+
+        confirmPasswordTextField
+            .height(UIElementSizes.actionButtonHeight)
+            .top(passwordTextField.bottomAnchor, constant: 20)
+            .leading(emailTextField.leadingAnchor)
+            .trailing(emailTextField.trailingAnchor)
+            .build()
+
+        signUpButton
+            .height(UIElementSizes.actionButtonHeight)
+            .top(confirmPasswordTextField.bottomAnchor, constant: 20)
+            .leading(emailTextField.leadingAnchor)
+            .trailing(emailTextField.trailingAnchor)
+            .build()
     }
 }

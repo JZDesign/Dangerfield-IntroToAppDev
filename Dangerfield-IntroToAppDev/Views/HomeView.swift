@@ -7,33 +7,38 @@
 //
 import Foundation
 import UIKit
-class HomeView: UIView{
-    
+class HomeView: UIView {
+
     var signOut: ActionButton = {
         let button = ActionButton()
         button.setTitle("Sign Out", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
-    
-    private func setupView(){
+
+    private func setupView() {
         backgroundColor = Colors.primaryColor
         self.addSubview(signOut)
         setConstraints()
     }
-    
-    private func setConstraints(){
-        
-        Constraints.constraintWithBottomAndCenterXAnchor(field: signOut, width: UIElementSizes.windowWidth-40, height: UIElementSizes.actionButtonHeight, bottomAnchor: bottomAnchor, bottomConstatnt: -100, centerXAnchor: centerXAnchor, centerXConstant: 0)
+
+    private func setConstraints() {
+
+        signOut
+            .width(UIElementSizes.windowWidth - 40)
+            .height(UIElementSizes.actionButtonHeight)
+            .bottom(bottomAnchor, constant: -100)
+            .centerX(centerXAnchor)
+            .build()
     }
 }

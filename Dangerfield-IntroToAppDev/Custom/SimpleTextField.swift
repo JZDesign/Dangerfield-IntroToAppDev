@@ -8,19 +8,19 @@
 
 import Foundation
 import UIKit
-final class SimpleTextField:UITextField  {
-    
+final class SimpleTextField: UITextField {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
-    
-    private func setupView(){
+
+    private func setupView() {
         layer.cornerRadius = 12
         layer.borderWidth = 2
         layer.borderColor = UIColor.gray.cgColor
@@ -29,8 +29,4 @@ final class SimpleTextField:UITextField  {
         leftView = paddingView
         textAlignment = .left
     }
-    
-    
-    
-   
 }

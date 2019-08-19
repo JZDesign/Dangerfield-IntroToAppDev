@@ -11,77 +11,52 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     var signUpView = SignUpView()
-    let notifictionName = Notification.Name(rawValue: resultLoginKey)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupView()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        createObservers()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    fileprivate func setupView(){
+
+    fileprivate func setupView() {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Sign Up"
-        
-        signUpView.signUpButton.addTarget(self, action: #selector(handleSignUpClick(sender:)), for: .touchUpInside)
-                
+        signUpView.signUpButton.action = handleSignUpClick
         view = signUpView
     }
-    
-    fileprivate func createObservers(){
-        NotificationCenter.default.addObserver(self, selector: #selector(handleSignUpResult(_:)), name: notifictionName, object: nil)
-    }
-    
-    @objc
-    func handleSignUpResult(_ notification: NSNotification){
-        let result: String = notification.userInfo?["result"] as! String
-        if result == successKey {
-            let navigationController = UINavigationController(rootViewController: HomeViewController())
-            self.present(navigationController, animated: true, completion: nil)
-        }else{
-            if let error: String = (notification.userInfo?["error"] as! String?){
-                CreateAlert.showBasic(self, title: "Error Signing Up", message: error)
-            }
-        }
-        
-    }
-    
-    @objc
-    func handleSignUpClick(sender: ActionButton){
+
+    func handleSignUpClick() {
         guard let emailAddress = signUpView.emailTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
         guard let password = signUpView.passwordTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
         guard let confirmPassword =
             signUpView.confirmPasswordTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
-        
-        do{
-            try FirebaseConnection.signUpUser(email:emailAddress, password: password, confirmPassword: confirmPassword)
-        }catch LoginError.incompleteForm{
+        do {
+            //FIXME: CHANGE STUCTURE
+            try FirebaseConnection.signUpUser(email: emailAddress, password: password, confirmPassword: confirmPassword, completion: {_, error in
+                if error != nil {
+                    CreateAlert.showBasic(self, title: "Error Signing Up", message: String(describing: error?.localizedDescription))
+                    return
+                }
+
+                let navigationController = UINavigationController(rootViewController: HomeViewController())
+                self.present(navigationController, animated: true, completion: nil)
+            })
+
+        }catch LoginError.incompleteForm {
             CreateAlert.showBasic(self, title: "Incomplete Form", message: "Please fill out both password and email")
             return
-        }catch LoginError.invalidEmail{
+        }catch LoginError.invalidEmail {
             CreateAlert.showBasic(self, title: "Invalid Email", message: "Email not valid, please try again")
             return
-        }catch LoginError.incorrectPasswordLength{
+        }catch LoginError.incorrectPasswordLength {
             CreateAlert.showBasic(self, title: "Password too short", message: "Passwords are at least 6 characters")
             return
-        }catch LoginError.missMatchPasswords{
-            CreateAlert.showBasic(self, title: "Password don't match", message: "Please check that both passwords are the same")
+        }catch LoginError.missMatchPasswords {
+            CreateAlert.showBasic(self, title: "Password don't match",
+                                  message: "Please check that both passwords are the same")
             return
         }catch {
             CreateAlert.showBasic(self, title: "Error", message: "An unknown error occured")
             return
         }
-
     }
-
 }

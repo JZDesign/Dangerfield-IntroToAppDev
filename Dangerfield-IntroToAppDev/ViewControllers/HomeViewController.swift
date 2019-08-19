@@ -14,38 +14,33 @@ class HomeViewController: UIViewController {
     var homeView = HomeView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if Auth.auth().currentUser == nil {
             DispatchQueue.main.async {
                 print("User was not authenticated")
                 let navigationController = UINavigationController(rootViewController: WelcomeViewController())
                 self.present(navigationController, animated: false, completion: nil)
             }
-        }else{
+        }else {
             setupView()
         }
     }
-    
-    
-    fileprivate func setupView(){
+
+    fileprivate func setupView() {
         //styleistic choice to remove background of navigation controller
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
-        
-        homeView.signOut.addTarget(self, action: #selector(handleSignOutClick(sender:)), for: .touchUpInside)
+
+        homeView.signOut.action = handleSignOutClick
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Home"
-        
         view = homeView
     }
-    
-    @objc
-    func handleSignOutClick(sender: ActionButton){
+
+    func handleSignOutClick() {
         if FirebaseConnection.signOutUser() {
             let navigationController = UINavigationController(rootViewController: WelcomeViewController())
             self.present(navigationController, animated: false, completion: nil)
         }
     }
-    
-
 }
