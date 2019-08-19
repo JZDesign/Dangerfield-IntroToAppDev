@@ -19,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
 
+        //code to help use programatic views
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = HomeViewController()
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        window?.makeKeyAndVisible()
+
         return true
     }
 
