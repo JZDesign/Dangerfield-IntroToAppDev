@@ -7,3 +7,4 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseFirestoreBinary.j
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseGoogleSignInBinary.json" "6.0.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebasePerformanceBinary.json" "5.15.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.json" "5.15.0"
+github "AliSoftware/OHHTTPStubs" "8.0.0"

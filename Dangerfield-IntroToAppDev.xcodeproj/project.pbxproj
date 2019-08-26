@@ -25,6 +25,9 @@
 		5A8F30382309E5BA000A374F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30372309E5BA000A374F /* HomeViewController.swift */; };
 		5A8F303A2309E629000A374F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30392309E629000A374F /* HomeView.swift */; };
 		5AAA5055230A3B3C006A0941 /* Font+Decorations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA5054230A3B3C006A0941 /* Font+Decorations.swift */; };
+		5ADA3587231369F800CCC9BA /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADA3586231369F800CCC9BA /* OHHTTPStubs.framework */; };
+		5ADA358823136A1D00CCC9BA /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADA3586231369F800CCC9BA /* OHHTTPStubs.framework */; };
+		5ADA358923136A1D00CCC9BA /* OHHTTPStubs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADA3586231369F800CCC9BA /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
@@ -68,6 +71,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5ADA358A23136A1D00CCC9BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5ADA358923136A1D00CCC9BA /* OHHTTPStubs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5A8F30142309AB67000A374F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5A8F30192309ABF5000A374F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -87,6 +104,7 @@
 		5A8F30372309E5BA000A374F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A8F30392309E629000A374F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5AAA5054230A3B3C006A0941 /* Font+Decorations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Decorations.swift"; sourceTree = "<group>"; };
+		5ADA3586231369F800CCC9BA /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +154,7 @@
 				A2876EE323087DD100565829 /* FirebaseCore.framework in Frameworks */,
 				A2876EE423087DD100565829 /* FirebaseInstanceID.framework in Frameworks */,
 				A2876EE523087DD100565829 /* gRPC-Core.framework in Frameworks */,
+				5ADA358823136A1D00CCC9BA /* OHHTTPStubs.framework in Frameworks */,
 				A2876EE623087DD100565829 /* Crashlytics.framework in Frameworks */,
 				A2876EE723087DD100565829 /* Protobuf.framework in Frameworks */,
 				A2876EE823087DD100565829 /* FirebaseAuth.framework in Frameworks */,
@@ -145,6 +164,7 @@
 				A2876EEC23087DD100565829 /* leveldb-library.framework in Frameworks */,
 				A2876EED23087DD100565829 /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				A2876EEF23087DD100565829 /* FirebaseRemoteConfig.framework in Frameworks */,
+				5ADA3587231369F800CCC9BA /* OHHTTPStubs.framework in Frameworks */,
 				A2876EF023087DD100565829 /* GTMSessionFetcher.framework in Frameworks */,
 				A2876EF223087DD100565829 /* FirebaseDatabase.framework in Frameworks */,
 				A2876EF323087DD100565829 /* FirebaseStorage.framework in Frameworks */,
@@ -269,6 +289,7 @@
 		A2876EC323087DA600565829 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5ADA3586231369F800CCC9BA /* OHHTTPStubs.framework */,
 				A2F3FD6E2308905D006C9C3B /* Firebase.framework */,
 				A2876EDF23087DD100565829 /* BoringSSL.framework */,
 				A2876ECC23087DD000565829 /* Crashlytics.framework */,
@@ -313,6 +334,7 @@
 				A2876EBA23086FA400565829 /* SwiftLint */,
 				A2876EBB23086FB700565829 /* SwiftLint autoCorrect */,
 				A2876EC223087D5D00565829 /* Carthage */,
+				5ADA358A23136A1D00CCC9BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
