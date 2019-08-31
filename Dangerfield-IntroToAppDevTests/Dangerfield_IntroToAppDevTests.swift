@@ -8,27 +8,39 @@
 
 import XCTest
 @testable import Dangerfield_IntroToAppDev
+// MARK: - LESSON
+typealias result = Result<Bool, Error>  // Success, Failure in Swift  (lhs rhs) in other lang == Either Pattern
 
 class DangerfieldIntroToAppDevTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testEitherSuccess() {
+        handleEither(succeeds: true) { (result) in
+            switch result {
+            case .success(let val):
+                XCTAssertTrue(val)
+            default: XCTFail(#function)
+            }
         }
     }
+    
+    func testCompletionBlockSucceeds() {
+        completionBlock(succeeds: true) { (value, error) in
+            XCTAssertNil(error)
+            XCTAssertTrue(value ?? false)
+        }
+    }
+    
+    func handleEither(succeeds: Bool, completion: @escaping (result)-> Void) {
+        succeeds ? completion(.success(true)) : completion(.failure(TestError.error))
+    }
+    
+    func completionBlock(succeeds: Bool, completion: @escaping (Bool?, Error?)-> Void) {
+        succeeds ? completion(true, nil) : completion(nil, TestError.error)
+    }
+    
 
+}
+
+enum TestError : Error {
+    case error
 }
