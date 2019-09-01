@@ -12,6 +12,16 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        WeatherMan.forecastForCity("London") { (result) in
+            switch result {
+            case .success(let response):
+                print(response.reponse,
+                      String(data: response.data, encoding: .utf8))
+                
+            default : print("")
+            }
+        }
     }
 
     fileprivate func setupView() {
