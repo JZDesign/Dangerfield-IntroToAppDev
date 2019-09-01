@@ -7,6 +7,9 @@ target 'Dangerfield-IntroToAppDev' do
 
   # Pods for Dangerfield-IntroToAppDev
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+
   target 'Dangerfield-IntroToAppDevTests' do
     inherit! :search_paths
     # Pods for testing
