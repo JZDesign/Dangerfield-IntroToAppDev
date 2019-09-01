@@ -31,38 +31,12 @@
 		5A8F30382309E5BA000A374F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30372309E5BA000A374F /* HomeViewController.swift */; };
 		5A8F303A2309E629000A374F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F30392309E629000A374F /* HomeView.swift */; };
 		5AAA5055230A3B3C006A0941 /* Font+Decorations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA5054230A3B3C006A0941 /* Font+Decorations.swift */; };
-		91650FB43B3AED5D431A2D50 /* Pods_Dangerfield_IntroToAppDevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02523C2512825977F5175E /* Pods_Dangerfield_IntroToAppDevTests.framework */; };
-		9C3D906EE67262FDE8E79051 /* Pods_Dangerfield_IntroToAppDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0F27094A541211F7C2FD5 /* Pods_Dangerfield_IntroToAppDev.framework */; };
+		5FABB83B87A3C63CC366B3D0 /* Pods_Dangerfield_IntroToAppDevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668C30C7A468DB5AEA48B638 /* Pods_Dangerfield_IntroToAppDevTests.framework */; };
 		A2876E9B23086E6000565829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876E9A23086E6000565829 /* AppDelegate.swift */; };
 		A2876EA223086E6300565829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA123086E6300565829 /* Assets.xcassets */; };
 		A2876EA523086E6300565829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2876EA323086E6300565829 /* LaunchScreen.storyboard */; };
 		A2876EB023086E6300565829 /* Dangerfield_IntroToAppDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */; };
-		A2876EC523087DA600565829 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC423087DA600565829 /* libicucore.tbd */; };
-		A2876EE023087DD100565829 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC623087DD000565829 /* GoogleAppMeasurement.framework */; };
-		A2876EE123087DD100565829 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC723087DD000565829 /* Fabric.framework */; };
-		A2876EE223087DD100565829 /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC823087DD000565829 /* FirebaseABTesting.framework */; };
-		A2876EE323087DD100565829 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EC923087DD000565829 /* FirebaseCore.framework */; };
-		A2876EE423087DD100565829 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECA23087DD000565829 /* FirebaseInstanceID.framework */; };
-		A2876EE523087DD100565829 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECB23087DD000565829 /* gRPC-Core.framework */; };
-		A2876EE623087DD100565829 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECC23087DD000565829 /* Crashlytics.framework */; };
-		A2876EE723087DD100565829 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECD23087DD000565829 /* Protobuf.framework */; };
-		A2876EE823087DD100565829 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECE23087DD000565829 /* FirebaseAuth.framework */; };
-		A2876EE923087DD100565829 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ECF23087DD100565829 /* FIRAnalyticsConnector.framework */; };
-		A2876EEA23087DD100565829 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED023087DD100565829 /* GoogleUtilities.framework */; };
-		A2876EEB23087DD100565829 /* FirebasePerformance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED123087DD100565829 /* FirebasePerformance.framework */; };
-		A2876EEC23087DD100565829 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED223087DD100565829 /* leveldb-library.framework */; };
-		A2876EED23087DD100565829 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED323087DD100565829 /* FirebaseCoreDiagnostics.framework */; };
-		A2876EEF23087DD100565829 /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED523087DD100565829 /* FirebaseRemoteConfig.framework */; };
-		A2876EF023087DD100565829 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED623087DD100565829 /* GTMSessionFetcher.framework */; };
-		A2876EF223087DD100565829 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED823087DD100565829 /* FirebaseDatabase.framework */; };
-		A2876EF323087DD100565829 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876ED923087DD100565829 /* FirebaseStorage.framework */; };
-		A2876EF423087DD100565829 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDA23087DD100565829 /* FirebaseFirestore.framework */; };
-		A2876EF523087DD100565829 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDB23087DD100565829 /* nanopb.framework */; };
-		A2876EF623087DD100565829 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDC23087DD100565829 /* GoogleToolboxForMac.framework */; };
-		A2876EF723087DD100565829 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDD23087DD100565829 /* gRPC-C++.framework */; };
-		A2876EF823087DD100565829 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDE23087DD100565829 /* FirebaseAnalytics.framework */; };
-		A2876EF923087DD100565829 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2876EDF23087DD100565829 /* BoringSSL.framework */; };
-		A2F3FD6F2308905D006C9C3B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F3FD6E2308905D006C9C3B /* Firebase.framework */; };
+		E2F54D267C6581A17659AE5C /* Pods_Dangerfield_IntroToAppDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D29B9715AF86E8749D3CF80 /* Pods_Dangerfield_IntroToAppDev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,16 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04271CC11D333725DB19D9C7 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.release.xcconfig"; sourceTree = "<group>"; };
-		0A02523C2512825977F5175E /* Pods_Dangerfield_IntroToAppDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22E0F27094A541211F7C2FD5 /* Pods_Dangerfield_IntroToAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43605FF8345DD8DDA5777DA3 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; sourceTree = "<group>"; };
+		35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; sourceTree = "<group>"; };
 		5A38D562231A0F9F006E25D1 /* WeatherMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMan.swift; sourceTree = "<group>"; };
 		5A38D565231A23DB006E25D1 /* ForecastStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ForecastStub.json; sourceTree = "<group>"; };
 		5A38D567231A2481006E25D1 /* Bang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
 		5A38D569231A2536006E25D1 /* OHHTTPStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPStubs.swift; sourceTree = "<group>"; };
 		5A38D56D231A25E5006E25D1 /* ForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTests.swift; sourceTree = "<group>"; };
-		5A6D69548F29E78CA00CDAD0 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8E9307231A352900BCD1F3 /* Json+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Json+Conversion.swift"; sourceTree = "<group>"; };
 		5A8F30142309AB67000A374F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5A8F30192309ABF5000A374F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -105,6 +77,9 @@
 		5A8F30372309E5BA000A374F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A8F30392309E629000A374F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5AAA5054230A3B3C006A0941 /* Font+Decorations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Decorations.swift"; sourceTree = "<group>"; };
+		668C30C7A468DB5AEA48B638 /* Pods_Dangerfield_IntroToAppDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D29B9715AF86E8749D3CF80 /* Pods_Dangerfield_IntroToAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.release.xcconfig"; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,34 +88,6 @@
 		A2876EAB23086E6300565829 /* Dangerfield-IntroToAppDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dangerfield-IntroToAppDevTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876EAF23086E6300565829 /* Dangerfield_IntroToAppDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dangerfield_IntroToAppDevTests.swift; sourceTree = "<group>"; };
 		A2876EB123086E6300565829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2876EC423087DA600565829 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		A2876EC623087DD000565829 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		A2876EC723087DD000565829 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = "<group>"; };
-		A2876EC823087DD000565829 /* FirebaseABTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseABTesting.framework; path = Carthage/Build/iOS/FirebaseABTesting.framework; sourceTree = "<group>"; };
-		A2876EC923087DD000565829 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
-		A2876ECA23087DD000565829 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		A2876ECB23087DD000565829 /* gRPC-Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-Core.framework"; path = "Carthage/Build/iOS/gRPC-Core.framework"; sourceTree = "<group>"; };
-		A2876ECC23087DD000565829 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Carthage/Build/iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		A2876ECD23087DD000565829 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
-		A2876ECE23087DD000565829 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Carthage/Build/iOS/FirebaseAuth.framework; sourceTree = "<group>"; };
-		A2876ECF23087DD100565829 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
-		A2876ED023087DD100565829 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
-		A2876ED123087DD100565829 /* FirebasePerformance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebasePerformance.framework; path = Carthage/Build/iOS/FirebasePerformance.framework; sourceTree = "<group>"; };
-		A2876ED223087DD100565829 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
-		A2876ED323087DD100565829 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		A2876ED523087DD100565829 /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseRemoteConfig.framework; path = Carthage/Build/iOS/FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
-		A2876ED623087DD100565829 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
-		A2876ED723087DD100565829 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Carthage/Build/iOS/GoogleSignIn.framework; sourceTree = "<group>"; };
-		A2876ED823087DD100565829 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		A2876ED923087DD100565829 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Carthage/Build/iOS/FirebaseStorage.framework; sourceTree = "<group>"; };
-		A2876EDA23087DD100565829 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Carthage/Build/iOS/FirebaseFirestore.framework; sourceTree = "<group>"; };
-		A2876EDB23087DD100565829 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
-		A2876EDC23087DD100565829 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Carthage/Build/iOS/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
-		A2876EDD23087DD100565829 /* gRPC-C++.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-C++.framework"; path = "Carthage/Build/iOS/gRPC-C++.framework"; sourceTree = "<group>"; };
-		A2876EDE23087DD100565829 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		A2876EDF23087DD100565829 /* BoringSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BoringSSL.framework; path = Carthage/Build/iOS/BoringSSL.framework; sourceTree = "<group>"; };
-		A2F3FD6E2308905D006C9C3B /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
-		E15487F76441F82CBA722A3C /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,33 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2876EC523087DA600565829 /* libicucore.tbd in Frameworks */,
-				A2876EE023087DD100565829 /* GoogleAppMeasurement.framework in Frameworks */,
-				A2876EE123087DD100565829 /* Fabric.framework in Frameworks */,
-				A2876EE223087DD100565829 /* FirebaseABTesting.framework in Frameworks */,
-				A2876EE323087DD100565829 /* FirebaseCore.framework in Frameworks */,
-				A2876EE423087DD100565829 /* FirebaseInstanceID.framework in Frameworks */,
-				A2876EE523087DD100565829 /* gRPC-Core.framework in Frameworks */,
-				A2876EE623087DD100565829 /* Crashlytics.framework in Frameworks */,
-				A2876EE723087DD100565829 /* Protobuf.framework in Frameworks */,
-				A2876EE823087DD100565829 /* FirebaseAuth.framework in Frameworks */,
-				A2876EE923087DD100565829 /* FIRAnalyticsConnector.framework in Frameworks */,
-				A2876EEA23087DD100565829 /* GoogleUtilities.framework in Frameworks */,
-				A2876EEB23087DD100565829 /* FirebasePerformance.framework in Frameworks */,
-				A2876EEC23087DD100565829 /* leveldb-library.framework in Frameworks */,
-				A2876EED23087DD100565829 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				A2876EEF23087DD100565829 /* FirebaseRemoteConfig.framework in Frameworks */,
-				A2876EF023087DD100565829 /* GTMSessionFetcher.framework in Frameworks */,
-				A2876EF223087DD100565829 /* FirebaseDatabase.framework in Frameworks */,
-				A2876EF323087DD100565829 /* FirebaseStorage.framework in Frameworks */,
-				A2876EF423087DD100565829 /* FirebaseFirestore.framework in Frameworks */,
-				A2876EF523087DD100565829 /* nanopb.framework in Frameworks */,
-				A2876EF623087DD100565829 /* GoogleToolboxForMac.framework in Frameworks */,
-				A2876EF723087DD100565829 /* gRPC-C++.framework in Frameworks */,
-				A2876EF823087DD100565829 /* FirebaseAnalytics.framework in Frameworks */,
-				A2876EF923087DD100565829 /* BoringSSL.framework in Frameworks */,
-				A2F3FD6F2308905D006C9C3B /* Firebase.framework in Frameworks */,
-				9C3D906EE67262FDE8E79051 /* Pods_Dangerfield_IntroToAppDev.framework in Frameworks */,
+				E2F54D267C6581A17659AE5C /* Pods_Dangerfield_IntroToAppDev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91650FB43B3AED5D431A2D50 /* Pods_Dangerfield_IntroToAppDevTests.framework in Frameworks */,
+				5FABB83B87A3C63CC366B3D0 /* Pods_Dangerfield_IntroToAppDevTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,10 +113,10 @@
 		3D061E82EC713A0CA1E286B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A6D69548F29E78CA00CDAD0 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */,
-				04271CC11D333725DB19D9C7 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */,
-				43605FF8345DD8DDA5777DA3 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */,
-				E15487F76441F82CBA722A3C /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */,
+				35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */,
+				82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */,
+				0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */,
+				2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -292,8 +213,8 @@
 				A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */,
 				A2876EAE23086E6300565829 /* Dangerfield-IntroToAppDevTests */,
 				A2876E9823086E6000565829 /* Products */,
-				A2876EC323087DA600565829 /* Frameworks */,
 				3D061E82EC713A0CA1E286B7 /* Pods */,
+				FD53824B21C610818EA7A064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,38 +257,11 @@
 			path = "Dangerfield-IntroToAppDevTests";
 			sourceTree = "<group>";
 		};
-		A2876EC323087DA600565829 /* Frameworks */ = {
+		FD53824B21C610818EA7A064 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2F3FD6E2308905D006C9C3B /* Firebase.framework */,
-				A2876EDF23087DD100565829 /* BoringSSL.framework */,
-				A2876ECC23087DD000565829 /* Crashlytics.framework */,
-				A2876EC723087DD000565829 /* Fabric.framework */,
-				A2876ECF23087DD100565829 /* FIRAnalyticsConnector.framework */,
-				A2876EC823087DD000565829 /* FirebaseABTesting.framework */,
-				A2876EDE23087DD100565829 /* FirebaseAnalytics.framework */,
-				A2876ECE23087DD000565829 /* FirebaseAuth.framework */,
-				A2876EC923087DD000565829 /* FirebaseCore.framework */,
-				A2876ED323087DD100565829 /* FirebaseCoreDiagnostics.framework */,
-				A2876ED823087DD100565829 /* FirebaseDatabase.framework */,
-				A2876EDA23087DD100565829 /* FirebaseFirestore.framework */,
-				A2876ECA23087DD000565829 /* FirebaseInstanceID.framework */,
-				A2876ED123087DD100565829 /* FirebasePerformance.framework */,
-				A2876ED523087DD100565829 /* FirebaseRemoteConfig.framework */,
-				A2876ED923087DD100565829 /* FirebaseStorage.framework */,
-				A2876EC623087DD000565829 /* GoogleAppMeasurement.framework */,
-				A2876ED723087DD100565829 /* GoogleSignIn.framework */,
-				A2876EDC23087DD100565829 /* GoogleToolboxForMac.framework */,
-				A2876ED023087DD100565829 /* GoogleUtilities.framework */,
-				A2876EDD23087DD100565829 /* gRPC-C++.framework */,
-				A2876ECB23087DD000565829 /* gRPC-Core.framework */,
-				A2876ED623087DD100565829 /* GTMSessionFetcher.framework */,
-				A2876ED223087DD100565829 /* leveldb-library.framework */,
-				A2876EDB23087DD100565829 /* nanopb.framework */,
-				A2876ECD23087DD000565829 /* Protobuf.framework */,
-				A2876EC423087DA600565829 /* libicucore.tbd */,
-				22E0F27094A541211F7C2FD5 /* Pods_Dangerfield_IntroToAppDev.framework */,
-				0A02523C2512825977F5175E /* Pods_Dangerfield_IntroToAppDevTests.framework */,
+				6D29B9715AF86E8749D3CF80 /* Pods_Dangerfield_IntroToAppDev.framework */,
+				668C30C7A468DB5AEA48B638 /* Pods_Dangerfield_IntroToAppDevTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,13 +273,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2876EB423086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDev" */;
 			buildPhases = (
-				A640F3D2A42395E8EB22D919 /* [CP] Check Pods Manifest.lock */,
+				BA638AE4D37C4C63872A37AA /* [CP] Check Pods Manifest.lock */,
 				A2876E9323086E6000565829 /* Sources */,
 				A2876E9423086E6000565829 /* Frameworks */,
 				A2876E9523086E6000565829 /* Resources */,
 				A2876EBA23086FA400565829 /* SwiftLint */,
 				A2876EBB23086FB700565829 /* SwiftLint autoCorrect */,
-				7024FA282843C45646FBE46B /* [CP] Embed Pods Frameworks */,
+				3A8659B5F6AEBE14085F8962 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2876EB723086E6300565829 /* Build configuration list for PBXNativeTarget "Dangerfield-IntroToAppDevTests" */;
 			buildPhases = (
-				9A0678A66445D2C2D50F05CF /* [CP] Check Pods Manifest.lock */,
+				9C8C14D576161E0F7D6FAA95 /* [CP] Check Pods Manifest.lock */,
 				A2876EA723086E6300565829 /* Sources */,
 				A2876EA823086E6300565829 /* Frameworks */,
 				A2876EA923086E6300565829 /* Resources */,
@@ -475,7 +369,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7024FA282843C45646FBE46B /* [CP] Embed Pods Frameworks */ = {
+		3A8659B5F6AEBE14085F8962 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,7 +395,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A0678A66445D2C2D50F05CF /* [CP] Check Pods Manifest.lock */ = {
+		9C8C14D576161E0F7D6FAA95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -559,7 +453,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint or run brew install swiftlint from your CLI\"\nfi\nelse\necho \"warning: Skipping SwiftLint autocorrect, this is not a Debug build\"\nfi\n";
 		};
-		A640F3D2A42395E8EB22D919 /* [CP] Check Pods Manifest.lock */ = {
+		BA638AE4D37C4C63872A37AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -762,27 +656,23 @@
 		};
 		A2876EB523086E6300565829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A6D69548F29E78CA00CDAD0 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */;
+			baseConfigurationReference = 35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSMDV43SUS;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Dangerfield-IntroToAppDev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(inherited)",
 				);
@@ -792,27 +682,23 @@
 		};
 		A2876EB623086E6300565829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04271CC11D333725DB19D9C7 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */;
+			baseConfigurationReference = 82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSMDV43SUS;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Dangerfield-IntroToAppDev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.rakidzich.Dangerfield-IntroToAppDev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(inherited)",
 				);
@@ -822,7 +708,7 @@
 		};
 		A2876EB823086E6300565829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43605FF8345DD8DDA5777DA3 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */;
+			baseConfigurationReference = 0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -844,7 +730,7 @@
 		};
 		A2876EB923086E6300565829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E15487F76441F82CBA722A3C /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */;
+			baseConfigurationReference = 2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
