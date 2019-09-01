@@ -197,7 +197,6 @@
 				43605FF8345DD8DDA5777DA3 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */,
 				E15487F76441F82CBA722A3C /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -386,8 +385,6 @@
 				A2876E9523086E6000565829 /* Resources */,
 				A2876EBA23086FA400565829 /* SwiftLint */,
 				A2876EBB23086FB700565829 /* SwiftLint autoCorrect */,
-				A2876EC223087D5D00565829 /* Carthage */,
-				5A38D56F231A2A9D006E25D1 /* Crashlytics */,
 				7024FA282843C45646FBE46B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -478,24 +475,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5A38D56F231A2A9D006E25D1 /* Crashlytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Crashlytics;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\\\n";
-		};
 		7024FA282843C45646FBE46B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,26 +558,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint or run brew install swiftlint from your CLI\"\nfi\nelse\necho \"warning: Skipping SwiftLint autocorrect, this is not a Debug build\"\nfi\n";
-		};
-		A2876EC223087D5D00565829 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/GoogleSignIn.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/GoogleSignIn.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\\\n\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 		A640F3D2A42395E8EB22D919 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
