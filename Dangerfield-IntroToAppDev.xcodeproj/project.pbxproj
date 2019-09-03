@@ -50,9 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDevTests/Pods-Dangerfield-IntroToAppDevTests.release.xcconfig"; sourceTree = "<group>"; };
-		35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.debug.xcconfig"; sourceTree = "<group>"; };
 		5A38D562231A0F9F006E25D1 /* WeatherMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMan.swift; sourceTree = "<group>"; };
 		5A38D565231A23DB006E25D1 /* ForecastStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ForecastStub.json; sourceTree = "<group>"; };
 		5A38D567231A2481006E25D1 /* Bang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
@@ -79,7 +76,6 @@
 		5AAA5054230A3B3C006A0941 /* Font+Decorations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Decorations.swift"; sourceTree = "<group>"; };
 		668C30C7A468DB5AEA48B638 /* Pods_Dangerfield_IntroToAppDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D29B9715AF86E8749D3CF80 /* Pods_Dangerfield_IntroToAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dangerfield_IntroToAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dangerfield-IntroToAppDev.release.xcconfig"; path = "Target Support Files/Pods-Dangerfield-IntroToAppDev/Pods-Dangerfield-IntroToAppDev.release.xcconfig"; sourceTree = "<group>"; };
 		A2876E9723086E6000565829 /* Dangerfield-IntroToAppDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dangerfield-IntroToAppDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2876E9A23086E6000565829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2876EA123086E6300565829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,17 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D061E82EC713A0CA1E286B7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */,
-				82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */,
-				0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */,
-				2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5A38D564231A23B7006E25D1 /* stubs */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +198,6 @@
 				A2876E9923086E6000565829 /* Dangerfield-IntroToAppDev */,
 				A2876EAE23086E6300565829 /* Dangerfield-IntroToAppDevTests */,
 				A2876E9823086E6000565829 /* Products */,
-				3D061E82EC713A0CA1E286B7 /* Pods */,
 				FD53824B21C610818EA7A064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -656,7 +640,6 @@
 		};
 		A2876EB523086E6300565829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35BD6021D3C84D2C2EEF8F25 /* Pods-Dangerfield-IntroToAppDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,7 +666,6 @@
 		};
 		A2876EB623086E6300565829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82932EC9C956A1E7670346D2 /* Pods-Dangerfield-IntroToAppDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -710,7 +692,6 @@
 		};
 		A2876EB823086E6300565829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EA6E4CFAD924BC79A68BDA9 /* Pods-Dangerfield-IntroToAppDevTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -732,7 +713,6 @@
 		};
 		A2876EB923086E6300565829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB4DE667300F0456991D7AF /* Pods-Dangerfield-IntroToAppDevTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
